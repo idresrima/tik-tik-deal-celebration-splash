@@ -12,7 +12,7 @@ const ComingSoon: React.FC = () => {
       </div>
       
       <p className="text-center text-gray-600 max-w-md px-4 mt-4">
-        Get ready for the best deals with just a few tiks! Your new favorite shopping app is about to launch.
+        Get ready for the best deals with just a few tiks!
       </p>
     </div>
   );

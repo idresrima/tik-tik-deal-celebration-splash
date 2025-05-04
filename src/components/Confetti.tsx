@@ -54,21 +54,23 @@ const Confetti: React.FC = () => {
           }}
         />
       ))}
-      <style jsx>{`
-        @keyframes fall {
-          0% {
-            transform: translateY(-100px) rotate(0deg);
-            opacity: 1;
+      <style>
+        {`
+          @keyframes fall {
+            0% {
+              transform: translateY(-100px) rotate(0deg);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(calc(100vh + 100px)) rotate(720deg);
+              opacity: 0;
+            }
           }
-          100% {
-            transform: translateY(calc(100vh + 100px)) rotate(720deg);
-            opacity: 0;
+          .animate-fall {
+            animation: fall linear forwards;
           }
-        }
-        .animate-fall {
-          animation: fall linear forwards;
-        }
-      `}</style>
+        `}
+      </style>
     </div>
   );
 };
